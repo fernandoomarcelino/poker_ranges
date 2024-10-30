@@ -1,9 +1,217 @@
-stack,posicao,acao,all_in,raise,call,fold,file_path
-14,UTG,RFI,3.00%,12.10%,0.00%,84.90%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/4.png
-14,UTG+1,vs UTG RFI,7.80%,0.00%,0.00%,92.20%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/5.png
-14,LJ,vs UTG RFI,8.50%,0.00%,0.00%,91.50%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/6.png
-14,HJ,vs UTG RFI,7.40%,0.00%,2.50%,90.10%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/7.png
-14,CO,vs UTG RFI,7.50%,0.00%,3.00%,89.50%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/8.png
-14,BTN,vs UTG RFI,8.00%,0.00%,4.00%,88.10%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/9.png
-14,SB,vs UTG RFI,10.40%,0.00%,9.50%,80.10%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/10.png
-14,BB,vs UTG RFI,7.50%,0.00%,68.20%,24.30%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/11.png
+stack,posicao,acao,all_in,raise,call,fold,file_path,file
+14,UTG,RFI,"3,00%","12,10%","0,00%","84,90%",https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/4.png,4
+14,UTG+1,vs UTG RFI,"7,80%","0,00%","0,00%","92,20%",https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/5.png,5
+14,LJ,vs UTG RFI,"8,50%","0,00%","0,00%","91,50%",https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/6.png,6
+14,HJ,vs UTG RFI,"7,40%","0,00%","2,50%","90,10%",https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/7.png,7
+14,CO,vs UTG RFI,"7,50%","0,00%","3,00%","89,50%",https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/8.png,8
+14,BTN,vs UTG RFI,"8,00%","0,00%","4,00%","88,10%",https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/9.png,9
+14,SB,vs UTG RFI,"10,40%","0,00%","9,50%","80,10%",https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/10.png,10
+14,BB,vs UTG RFI,"7,50%","0,00%","68,20%","24,30%",https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/11.png,11
+14,UTG+1,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/12.png,12
+14,LJ,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/13.png,13
+14,HJ,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/14.png,14
+14,CO,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/15.png,15
+14,BTN,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/16.png,16
+14,SB,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/17.png,17
+14,BB,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/18.png,18
+14,LJ,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/19.png,19
+14,HJ,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/20.png,20
+14,CO,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/21.png,21
+14,BTN,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/22.png,22
+14,SB,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/23.png,23
+14,BB,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/24.png,24
+14,HJ,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/25.png,25
+14,CO,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/26.png,26
+14,BTN,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/27.png,27
+14,SB,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/28.png,28
+14,BB,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/29.png,29
+14,CO,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/30.png,30
+14,BTN,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/31.png,31
+14,SB,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/32.png,32
+14,BB,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/33.png,33
+14,BTN,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/34.png,34
+14,SB,vs BTN RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/35.png,35
+14,BB,vs BTN RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/36.png,36
+14,SB,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/37.png,37
+14,BB,vs SB RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/38.png,38
+14,BB,vs SB LIMP,"11,50%","30,00%","57,50%","0,00%",https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/39.png,39
+17,UTG,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/40.png,40
+17,UTG+1,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/41.png,41
+17,LJ,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/42.png,42
+17,HJ,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/43.png,43
+17,CO,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/44.png,44
+17,BTN,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/45.png,45
+17,SB,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/46.png,46
+17,BB,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/47.png,47
+17,UTG+1,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/48.png,48
+17,LJ,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/49.png,49
+17,HJ,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/50.png,50
+17,CO,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/51.png,51
+17,BTN,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/52.png,52
+17,SB,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/53.png,53
+17,BB,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/54.png,54
+17,LJ,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/55.png,55
+17,HJ,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/56.png,56
+17,CO,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/57.png,57
+17,BTN,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/58.png,58
+17,SB,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/59.png,59
+17,BB,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/60.png,60
+17,HJ,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/61.png,61
+17,CO,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/62.png,62
+17,BTN,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/63.png,63
+17,SB,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/64.png,64
+17,BB,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/65.png,65
+17,CO,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/66.png,66
+17,BTN,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/67.png,67
+17,SB,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/68.png,68
+17,BB,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/69.png,69
+17,BTN,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/70.png,70
+17,SB,vs BTN RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/71.png,71
+17,BB,vs BTN RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/72.png,72
+17,SB,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/73.png,73
+17,BB,vs SB RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/74.png,74
+17,BB,vs SB LIMP,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/75.png,75
+20,UTG,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/76.png,76
+20,UTG+1,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/77.png,77
+20,LJ,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/78.png,78
+20,HJ,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/79.png,79
+20,CO,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/80.png,80
+20,BTN,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/81.png,81
+20,SB,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/82.png,82
+20,BB,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/83.png,83
+20,UTG+1,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/84.png,84
+20,LJ,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/85.png,85
+20,HJ,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/86.png,86
+20,CO,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/87.png,87
+20,BTN,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/88.png,88
+20,SB,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/89.png,89
+20,BB,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/90.png,90
+20,LJ,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/91.png,91
+20,HJ,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/92.png,92
+20,CO,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/93.png,93
+20,BTN,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/94.png,94
+20,SB,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/95.png,95
+20,BB,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/96.png,96
+20,HJ,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/97.png,97
+20,CO,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/98.png,98
+20,BTN,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/99.png,99
+20,SB,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/100.png,100
+20,BB,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/101.png,101
+20,CO,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/102.png,102
+20,BTN,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/103.png,103
+20,SB,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/104.png,104
+20,BB,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/105.png,105
+20,BTN,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/106.png,106
+20,SB,vs BTN RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/107.png,107
+20,BB,vs BTN RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/108.png,108
+20,SB,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/109.png,109
+20,BB,vs SB RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/110.png,110
+20,BB,vs SB LIMP,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/111.png,111
+30,UTG,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/112.png,112
+30,UTG+1,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/113.png,113
+30,LJ,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/114.png,114
+30,HJ,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/115.png,115
+30,CO,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/116.png,116
+30,BTN,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/117.png,117
+30,SB,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/118.png,118
+30,BB,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/119.png,119
+30,UTG+1,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/120.png,120
+30,LJ,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/121.png,121
+30,HJ,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/122.png,122
+30,CO,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/123.png,123
+30,BTN,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/124.png,124
+30,SB,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/125.png,125
+30,BB,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/126.png,126
+30,LJ,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/127.png,127
+30,HJ,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/128.png,128
+30,CO,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/129.png,129
+30,BTN,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/130.png,130
+30,SB,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/131.png,131
+30,BB,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/132.png,132
+30,HJ,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/133.png,133
+30,CO,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/134.png,134
+30,BTN,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/135.png,135
+30,SB,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/136.png,136
+30,BB,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/137.png,137
+30,CO,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/138.png,138
+30,BTN,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/139.png,139
+30,SB,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/140.png,140
+30,BB,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/141.png,141
+30,BTN,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/142.png,142
+30,SB,vs BTN RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/143.png,143
+30,BB,vs BTN RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/144.png,144
+30,SB,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/145.png,145
+30,BB,vs SB RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/146.png,146
+30,BB,vs SB LIMP,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/147.png,147
+50,UTG,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/148.png,148
+50,UTG+1,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/149.png,149
+50,LJ,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/150.png,150
+50,HJ,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/151.png,151
+50,CO,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/152.png,152
+50,BTN,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/153.png,153
+50,SB,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/154.png,154
+50,BB,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/155.png,155
+50,UTG+1,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/156.png,156
+50,LJ,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/157.png,157
+50,HJ,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/158.png,158
+50,CO,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/159.png,159
+50,BTN,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/160.png,160
+50,SB,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/161.png,161
+50,BB,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/162.png,162
+50,LJ,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/163.png,163
+50,HJ,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/164.png,164
+50,CO,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/165.png,165
+50,BTN,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/166.png,166
+50,SB,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/167.png,167
+50,BB,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/168.png,168
+50,HJ,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/169.png,169
+50,CO,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/170.png,170
+50,BTN,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/171.png,171
+50,SB,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/172.png,172
+50,BB,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/173.png,173
+50,CO,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/174.png,174
+50,BTN,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/175.png,175
+50,SB,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/176.png,176
+50,BB,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/177.png,177
+50,BTN,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/178.png,178
+50,SB,vs BTN RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/179.png,179
+50,BB,vs BTN RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/180.png,180
+50,SB,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/181.png,181
+50,BB,vs SB RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/182.png,182
+50,BB,vs SB LIMP,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/183.png,183
+100,UTG,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/184.png,184
+100,UTG+1,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/185.png,185
+100,LJ,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/186.png,186
+100,HJ,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/187.png,187
+100,CO,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/188.png,188
+100,BTN,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/189.png,189
+100,SB,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/190.png,190
+100,BB,vs UTG RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/191.png,191
+100,UTG+1,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/192.png,192
+100,LJ,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/193.png,193
+100,HJ,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/194.png,194
+100,CO,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/195.png,195
+100,BTN,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/196.png,196
+100,SB,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/197.png,197
+100,BB,vs UTG+1 RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/198.png,198
+100,LJ,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/199.png,199
+100,HJ,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/200.png,200
+100,CO,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/201.png,201
+100,BTN,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/202.png,202
+100,SB,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/203.png,203
+100,BB,vs LJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/204.png,204
+100,HJ,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/205.png,205
+100,CO,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/206.png,206
+100,BTN,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/207.png,207
+100,SB,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/208.png,208
+100,BB,vs HJ RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/209.png,209
+100,CO,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/210.png,210
+100,BTN,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/211.png,211
+100,SB,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/212.png,212
+100,BB,vs CO RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/213.png,213
+100,BTN,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/214.png,214
+100,SB,vs BTN RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/215.png,215
+100,BB,vs BTN RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/216.png,216
+100,SB,RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/217.png,217
+100,BB,vs SB RFI,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/218.png,218
+100,BB,vs SB LIMP,,,,,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/219.png,219

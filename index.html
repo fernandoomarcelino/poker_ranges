@@ -23,11 +23,12 @@
     <thead class="thead-dark">
     <tr>
         <th>Stack</th>
+        <th>Posição</th>
         <th>Ação</th>
-        <th>All In</th>
-        <th>Raise</th>
-        <th>Call</th>
-        <th>Fold</th>
+<!--        <th>All In</th>-->
+<!--        <th>Raise</th>-->
+<!--        <th>Call</th>-->
+<!--        <th>Fold</th>-->
         <th>Abrir</th>
     </tr>
     </thead>
@@ -131,11 +132,12 @@
               resultsTable.innerHTML += `
                     <tr>
                         <td>${item.stack}</td>
+                        <td>${item.posicao}</td>
                         <td>${item.acao}</td>
-                        <td>${item.all_in}</td>
-                        <td>${item.raise}</td>
-                        <td>${item.call}</td>
-                        <td>${item.fold}</td>
+<!--                        <td>${item.all_in}</td>-->
+<!--                        <td>${item.raise}</td>-->
+<!--                        <td>${item.call}</td>-->
+<!--                        <td>${item.fold}</td>-->
                         <td><button onclick="openFile('${item.file_path}')" class="btn btn-info">Abrir</button></td>
                     </tr>
                 `;
