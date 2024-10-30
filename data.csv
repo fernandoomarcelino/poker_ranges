@@ -1,0 +1,9 @@
+stack,posicao,acao,all_in,raise,call,fold,file_path
+14,UTG,RFI,3.00%,12.10%,0.00%,84.90%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/4.png
+14,UTG+1,vs UTG RFI,7.80%,0.00%,0.00%,92.20%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/5.png
+14,LJ,vs UTG RFI,8.50%,0.00%,0.00%,91.50%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/6.png
+14,HJ,vs UTG RFI,7.40%,0.00%,2.50%,90.10%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/7.png
+14,CO,vs UTG RFI,7.50%,0.00%,3.00%,89.50%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/8.png
+14,BTN,vs UTG RFI,8.00%,0.00%,4.00%,88.10%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/9.png
+14,SB,vs UTG RFI,10.40%,0.00%,9.50%,80.10%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/10.png
+14,BB,vs UTG RFI,7.50%,0.00%,68.20%,24.30%,https://raw.githubusercontent.com/fernandoomarcelino/poker_ranges/refs/heads/main/img/11.png

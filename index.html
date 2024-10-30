@@ -39,100 +39,43 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
     let positions = ['UTG', 'UTG+1', 'LJ', 'HJ', 'CO', 'BTN', 'SB', 'BB'];
-    let stacks = [14,17,20,30,50,100];
-    let data = [
-          {
-              "stack": 14,
-              "posicao": "UTG",
-              "acao": "RFI",
-              "all_in": "3,00%",
-              "raise": "12,10%",
-              "call": "0,00%",
-              "fold": "84,90%",
-              "file_path": "https://drive.google.com/uc?id=1eBiDduzi3cjDNcCTyya3cd4YEj7azuvo"
-          },
-          {
-              "stack": 14,
-              "posicao": "UTG+1",
-              "acao": "vs UTG RFI",
-              "all_in": "7,80%",
-              "raise": "0,00%",
-              "call": "0,00%",
-              "fold": "92,20%",
-              "file_path": "https://drive.google.com/file/d/1zhVN9hZB0UwnlikbHlElKbK9cBQmbBwZ/view?usp=drivesdk"
-          },
-          {
-              "stack": 14,
-              "posicao": "LJ",
-              "acao": "vs UTG RFI",
-              "all_in": "8,50%",
-              "raise": "0,00%",
-              "call": "0,00%",
-              "fold": "91,50%",
-              "file_path": "https://drive.google.com/file/d/1QJ-ZrFk58EBjscZoiIkL3pKnUdqGkxTO/view?usp=drivesdk"
-          },
-          {
-              "stack": 14,
-              "posicao": "HJ",
-              "acao": "vs UTG RFI",
-              "all_in": "7,40%",
-              "raise": "0,00%",
-              "call": "2,50%",
-              "fold": "90,10%",
-              "file_path": "https://drive.google.com/file/d/1CbOmjLZIcpBeR4Db4tX8qCkKYKK11vZU/view?usp=drivesdk"
-          },
-          {
-              "stack": 14,
-              "posicao": "CO",
-              "acao": "vs UTG RFI",
-              "all_in": "7,50%",
-              "raise": "0,00%",
-              "call": "3,00%",
-              "fold": "89,50%",
-              "file_path": "https://drive.google.com/file/d/1SBp8U8diMTTnyIkoRqVZYQex7JLiUO4I/view?usp=drivesdk"
-          },
-          {
-              "stack": 14,
-              "posicao": "BTN",
-              "acao": "vs UTG RFI",
-              "all_in": "8,00%",
-              "raise": "0,00%",
-              "call": "4,00%",
-              "fold": "88,10%",
-              "file_path": "https://drive.google.com/file/d/1uPkTFox7UkYO2eD1BxMw2uaxYkAAZPpu/view?usp=drivesdk"
-          },
-          {
-              "stack": 14,
-              "posicao": "SB",
-              "acao": "vs UTG RFI",
-              "all_in": "10,40%",
-              "raise": "0,00%",
-              "call": "9,50%",
-              "fold": "80,10%",
-              "file_path": "https://drive.google.com/file/d/1FrVnjTGk8GMPibNMHxm4EKIdUOmNGiZT/view?usp=drivesdk"
-          },
-          {
-              "stack": 14,
-              "posicao": "BB",
-              "acao": "vs UTG RFI",
-              "all_in": "7,50%",
-              "raise": "0,00%",
-              "call": "68,20%",
-              "fold": "24,30%",
-              "file_path": "https://drive.google.com/file/d/1ekBtgg62HfsciiP3FFgyfNJsBz2_Un81/view?usp=drivesdk"
-          }
-      ]
-    ;
+    let stacks = [14, 17, 20, 30, 50, 100];
+    let data = [];
 
     let selectedPosition = null;
     let selectedStack = null;
 
+    // Fetch data from CSV file
+    fetch('data.csv')
+      .then(response => response.text())
+      .then(csvText => {
+          parseCSV(csvText);
+          displayPositionButtons();
+          displayStackButtons();
+      });
+
+    // Parse CSV text into JavaScript objects
+    function parseCSV(csvText) {
+        const rows = csvText.split('\n').filter(row => row.trim() !== '');
+        const headers = rows[0].split(',');
+
+        data = rows.slice(1).map(row => {
+            const values = row.split(',');
+            const obj = {};
+            headers.forEach((header, index) => {
+                if (values[index] !== undefined) {
+                    obj[header.trim()] = values[index].trim();
+                }
+            });
+            return obj;
+        });
+    }
+
     // Display position buttons with unique values
     function displayPositionButtons() {
         const positionContainer = document.getElementById('positionButtons');
-        const uniquePositions = [...new Set(positions)];
         positionContainer.innerHTML = '';
-        uniquePositions.forEach(pos => {
+        positions.forEach(pos => {
             const button = document.createElement('button');
             button.className = 'btn m-1 ' + (isSelectPosition(pos) ? 'btn-primary' : 'btn-secondary');
             button.innerText = pos;
@@ -156,7 +99,6 @@
     // Display stack buttons based on selected position
     function displayStackButtons() {
         const stackContainer = document.getElementById('stackButtons');
-
         const uniqueStacks = [...new Set(stacks)];
         stackContainer.innerHTML = '';
         uniqueStacks.forEach(stack => {
@@ -184,19 +126,19 @@
         const resultsTable = document.getElementById('resultsTable').querySelector("tbody");
         resultsTable.innerHTML = "";
 
-        data.filter(item => (item.posicao === selectedPosition || !selectedPosition) && (item.stack === selectedStack || !selectedStack))
+        data.filter(item => (item.posicao === selectedPosition || !selectedPosition) && (parseInt(item.stack) === selectedStack || !selectedStack))
           .forEach(item => {
               resultsTable.innerHTML += `
-                        <tr>
-                            <td>${item.stack}</td>
-                            <td>${item.acao}</td>
-                            <td>${item.all_in}</td>
-                            <td>${item.raise}</td>
-                            <td>${item.call}</td>
-                            <td>${item.fold}</td>
-                            <td><button onclick="openFile('${item.file_path}')" class="btn btn-info">Abrir</button></td>
-                        </tr>
-                    `;
+                    <tr>
+                        <td>${item.stack}</td>
+                        <td>${item.acao}</td>
+                        <td>${item.all_in}</td>
+                        <td>${item.raise}</td>
+                        <td>${item.call}</td>
+                        <td>${item.fold}</td>
+                        <td><button onclick="openFile('${item.file_path}')" class="btn btn-info">Abrir</button></td>
+                    </tr>
+                `;
           });
     }
 
@@ -204,10 +146,6 @@
     function openFile(filePath) {
         window.open(filePath, '_blank');
     }
-
-    // Initialize by displaying position buttons
-    displayPositionButtons();
-    displayStackButtons();
 </script>
 
 <style>
@@ -224,6 +162,5 @@
         }
     }
 </style>
-
 </body>
 </html>
