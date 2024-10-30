@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANGES</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container my-4">
+<h1 class="text-center mb-4">Ranges</h1>
+
+<!-- Position buttons for filtering -->
+<h2>Escolha a Posição:</h2>
+<div id="positionButtons" class="mb-3 d-flex flex-wrap text-center"></div>
+
+<!-- Stack buttons for filtering -->
+<h2>Escolha o Stack:</h2>
+<div id="stackButtons" class="mb-3 d-flex flex-wrap"></div>
+
+<!-- Table for displaying results -->
+<h2>Resultados</h2>
+<table class="table table-bordered table-striped" id="resultsTable">
+    <thead class="thead-dark">
+    <tr>
+        <th>Stack</th>
+        <th>Ação</th>
+        <th>All In</th>
+        <th>Raise</th>
+        <th>Call</th>
+        <th>Fold</th>
+        <th>Abrir</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<!-- JavaScript for data handling -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    let positions = ['UTG', 'UTG+1', 'LJ', 'HJ', 'CO', 'BTN', 'SB', 'BB'];
+    let stacks = [14,17,20,30,50,100];
+    let data = [
+          {
+              "stack": 14,
+              "posicao": "UTG",
+              "acao": "RFI",
+              "all_in": "3,00%",
+              "raise": "12,10%",
+              "call": "0,00%",
+              "fold": "84,90%",
+              "file_path": "https://drive.google.com/uc?id=1eBiDduzi3cjDNcCTyya3cd4YEj7azuvo"
+          },
+          {
+              "stack": 14,
+              "posicao": "UTG+1",
+              "acao": "vs UTG RFI",
+              "all_in": "7,80%",
+              "raise": "0,00%",
+              "call": "0,00%",
+              "fold": "92,20%",
+              "file_path": "https://drive.google.com/file/d/1zhVN9hZB0UwnlikbHlElKbK9cBQmbBwZ/view?usp=drivesdk"
+          },
+          {
+              "stack": 14,
+              "posicao": "LJ",
+              "acao": "vs UTG RFI",
+              "all_in": "8,50%",
+              "raise": "0,00%",
+              "call": "0,00%",
+              "fold": "91,50%",
+              "file_path": "https://drive.google.com/file/d/1QJ-ZrFk58EBjscZoiIkL3pKnUdqGkxTO/view?usp=drivesdk"
+          },
+          {
+              "stack": 14,
+              "posicao": "HJ",
+              "acao": "vs UTG RFI",
+              "all_in": "7,40%",
+              "raise": "0,00%",
+              "call": "2,50%",
+              "fold": "90,10%",
+              "file_path": "https://drive.google.com/file/d/1CbOmjLZIcpBeR4Db4tX8qCkKYKK11vZU/view?usp=drivesdk"
+          },
+          {
+              "stack": 14,
+              "posicao": "CO",
+              "acao": "vs UTG RFI",
+              "all_in": "7,50%",
+              "raise": "0,00%",
+              "call": "3,00%",
+              "fold": "89,50%",
+              "file_path": "https://drive.google.com/file/d/1SBp8U8diMTTnyIkoRqVZYQex7JLiUO4I/view?usp=drivesdk"
+          },
+          {
+              "stack": 14,
+              "posicao": "BTN",
+              "acao": "vs UTG RFI",
+              "all_in": "8,00%",
+              "raise": "0,00%",
+              "call": "4,00%",
+              "fold": "88,10%",
+              "file_path": "https://drive.google.com/file/d/1uPkTFox7UkYO2eD1BxMw2uaxYkAAZPpu/view?usp=drivesdk"
+          },
+          {
+              "stack": 14,
+              "posicao": "SB",
+              "acao": "vs UTG RFI",
+              "all_in": "10,40%",
+              "raise": "0,00%",
+              "call": "9,50%",
+              "fold": "80,10%",
+              "file_path": "https://drive.google.com/file/d/1FrVnjTGk8GMPibNMHxm4EKIdUOmNGiZT/view?usp=drivesdk"
+          },
+          {
+              "stack": 14,
+              "posicao": "BB",
+              "acao": "vs UTG RFI",
+              "all_in": "7,50%",
+              "raise": "0,00%",
+              "call": "68,20%",
+              "fold": "24,30%",
+              "file_path": "https://drive.google.com/file/d/1ekBtgg62HfsciiP3FFgyfNJsBz2_Un81/view?usp=drivesdk"
+          }
+      ]
+    ;
+
+    let selectedPosition = null;
+    let selectedStack = null;
+
+    // Display position buttons with unique values
+    function displayPositionButtons() {
+        const positionContainer = document.getElementById('positionButtons');
+        const uniquePositions = [...new Set(positions)];
+        positionContainer.innerHTML = '';
+        uniquePositions.forEach(pos => {
+            const button = document.createElement('button');
+            button.className = 'btn m-1 ' + (isSelectPosition(pos) ? 'btn-primary' : 'btn-secondary');
+            button.innerText = pos;
+            button.onclick = () => selectPosition(pos);
+            positionContainer.appendChild(button);
+        });
+    }
+
+    // Handle position selection and display stack buttons
+    function selectPosition(position) {
+        selectedPosition = position;
+        displayPositionButtons();
+        displayStackButtons();
+        displayResults();
+    }
+
+    function isSelectPosition(position) {
+        return selectedPosition === position;
+    }
+
+    // Display stack buttons based on selected position
+    function displayStackButtons() {
+        const stackContainer = document.getElementById('stackButtons');
+
+        const uniqueStacks = [...new Set(stacks)];
+        stackContainer.innerHTML = '';
+        uniqueStacks.forEach(stack => {
+            const button = document.createElement('button');
+            button.className = 'btn m-1 ' + (isSelectStack(stack) ? 'btn-primary' : 'btn-secondary');
+            button.innerText = stack;
+            button.onclick = () => selectStack(stack);
+            stackContainer.appendChild(button);
+        });
+    }
+
+    // Handle stack selection and display results
+    function selectStack(stack) {
+        selectedStack = stack;
+        displayStackButtons();
+        displayResults();
+    }
+
+    function isSelectStack(stack) {
+        return selectedStack === stack;
+    }
+
+    // Display results based on selected position and stack
+    function displayResults() {
+        const resultsTable = document.getElementById('resultsTable').querySelector("tbody");
+        resultsTable.innerHTML = "";
+
+        data.filter(item => (item.posicao === selectedPosition || !selectedPosition) && (item.stack === selectedStack || !selectedStack))
+          .forEach(item => {
+              resultsTable.innerHTML += `
+                        <tr>
+                            <td>${item.stack}</td>
+                            <td>${item.acao}</td>
+                            <td>${item.all_in}</td>
+                            <td>${item.raise}</td>
+                            <td>${item.call}</td>
+                            <td>${item.fold}</td>
+                            <td><button onclick="openFile('${item.file_path}')" class="btn btn-info">Abrir</button></td>
+                        </tr>
+                    `;
+          });
+    }
+
+    // Open file based on file path
+    function openFile(filePath) {
+        window.open(filePath, '_blank');
+    }
+
+    // Initialize by displaying position buttons
+    displayPositionButtons();
+    displayStackButtons();
+</script>
+
+<style>
+    /* Ajuste de fonte e espaçamento para dispositivos móveis */
+    @media (max-width: 768px) {
+        .table {
+            font-size: 12px; /* Reduz o tamanho da fonte */
+        }
+        th, td {
+            padding: 0.25rem; /* Reduz o espaçamento de células */
+        }
+        body {
+            zoom: 0.9; /* Reduz o zoom em dispositivos móveis */
+        }
+    }
+</style>
+
+</body>
+</html>
